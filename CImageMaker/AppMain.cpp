@@ -84,7 +84,7 @@ float smoothstep(float min, float max, float value)
 
 int main()
 {
-	FLinerColor ClearColor = FLinerColor(1, 1, 1);
+	FLinerColor ClearColor = FLinerColor(1, 1, 1, 1);
 
 	FImage* OutputImage = new FImage(256, 256, "PreintegratedToonBRDF");
 	OutputImage->ClearImage(ClearColor);
@@ -95,7 +95,7 @@ int main()
 	{
 		for (int x = 0; x < 256; x++)
 		{
-			FLinerColor RetColor = FLinerColor(0, 0, 0);
+			FLinerColor RetColor = FLinerColor(0, 0, 0, 0);
 			float Y = (float)y / 256.0f;
 			float X = (float)x / 256.0f;
 
